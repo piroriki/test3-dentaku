@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<meta charset = "utf-8">
+
+ <head>
+  <link rel = "stylesheet" href = "main.css">
+ </head>
+
+ <body>
+ <form name="電卓">
+ <table>
+  
+  <!--液晶画面表示-->
+  <div id=calc>
+  <tr>
+   <td colspan="4">
+   <input readonly id="result" type="text" value="0"></td>
+  </tr>
+  </div>
+  
+ <!--１段目のボタン表示-->
+ <div id="button_first">
+ <tr>
+  <td><button type="button" onclick="num_click(this.innerHTML)">7</button></td>
+  <td><button type="button" onclick="num_click(this.innerHTML)">8</button></td>
+  <td><button type="button" onclick="num_click(this.innerHTML)">9</button></td>
+  <td><button type="button" onclick="ope_click(this.innerHTML)">+</button></td>
+ </tr>
+ </div>
+ 
+ <!--２段目のボタン表示-->
+ <div id="button_second">
+ <tr>
+  <td><button type="button" onclick="num_click(this.innerHTML)">4</button></td>
+  <td><button type="button" onclick="num_click(this.innerHTML)">5</button></td>
+  <td><button type="button" onclick="num_click(this.innerHTML)">6</button></td>
+  <td><button type="button" onclick="ope_click(this.innerHTML)">-</button></td>
+ </tr>
+ </div>
+ 
+ <!--３段目のボタン表示-->
+ <div id="button_thirth">
+ <tr>
+  <td><button type="button" onclick="num_click(this.innerHTML)">1</button></td>
+  <td><button type="button" onclick="num_click(this.innerHTML)">2</button></td>
+  <td><button type="button" onclick="num_click(this.innerHTML)">3</button></td>
+  <td><button type="button" onclick="ope_click(this.innerHTML)">×</button></td>
+ </tr>
+ </div>
+ 
+ <!--４段目のボタン表示-->
+ <div id="button_fourth">
+ <tr>
+  <td><button type="button" onclick="num_click(this.innerHTML)">0</button></td>
+  <td><button type="button" onclick="num_click(this.innerHTML)">00</button></td>
+  <td><button type="button" onclick="ope_click(this.innerHTML)">.</button></td>
+  <td><button type="button" onclick="ope_click(this.innerHTML)">÷</button></td>
+ </tr>
+ </div>
+ 
+ <!--５段目のボタン表示-->
+ <div id="button_fifth">
+ <tr>
+   <td colspan="2"><button type="button" onclick="AC_click()">AC</button></td>
+   <td colspan="2"><button type="button" onclick="equal_click()">=</button></td>
+ </tr>
+ </div>
+ 
+ </table>
+ </form>
+  
+ <script src="main.js"></script>
+ </body>
+</html>
