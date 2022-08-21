@@ -20,6 +20,8 @@ window.onload = function(){
   
   if(result.value == "0" && val == "0"){
     result.value="0";
+  }else if(result.value == "0" && val == "00"){
+    result.valut = "0";
   }else if(result.value == "0" && val == "."){
     result.value="0.";
   }else if(result.value == "0"){
